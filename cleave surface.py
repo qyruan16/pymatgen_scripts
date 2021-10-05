@@ -9,7 +9,7 @@ from pymatgen.io.vasp.inputs import Poscar
 mpr = MPRester()
 LiFePO4 = mpr.get_materials_ids("LiFePO4")
 
-struct = mpr.get_structure_by_material_id(LiFePO4[0])
+struct = mpr.get_structure_by_material_id('mp-19017')
 slab = SlabGenerator(struct, (0, 0, 1), 10, 15, center_slab=True)
 
 
